@@ -62,15 +62,16 @@
             this.bPawn1 = new System.Windows.Forms.Button();
             this.bTime = new System.Windows.Forms.Label();
             this.wTime = new System.Windows.Forms.Label();
+            this.startButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bRook1
             // 
             this.bRook1.BackColor = System.Drawing.Color.Black;
             this.bRook1.ForeColor = System.Drawing.Color.White;
-            this.bRook1.Location = new System.Drawing.Point(55, 25);
+            this.bRook1.Location = new System.Drawing.Point(57, 57);
             this.bRook1.Name = "bRook1";
-            this.bRook1.Size = new System.Drawing.Size(54, 51);
+            this.bRook1.Size = new System.Drawing.Size(54, 54);
             this.bRook1.TabIndex = 0;
             this.bRook1.Text = "bRook1";
             this.bRook1.UseVisualStyleBackColor = false;
@@ -79,9 +80,9 @@
             // 
             this.bKnight1.BackColor = System.Drawing.Color.Black;
             this.bKnight1.ForeColor = System.Drawing.Color.White;
-            this.bKnight1.Location = new System.Drawing.Point(115, 25);
+            this.bKnight1.Location = new System.Drawing.Point(112, 57);
             this.bKnight1.Name = "bKnight1";
-            this.bKnight1.Size = new System.Drawing.Size(54, 51);
+            this.bKnight1.Size = new System.Drawing.Size(54, 54);
             this.bKnight1.TabIndex = 1;
             this.bKnight1.Text = "bKnight1";
             this.bKnight1.UseVisualStyleBackColor = false;
@@ -90,9 +91,9 @@
             // 
             this.bBishop1.BackColor = System.Drawing.Color.Black;
             this.bBishop1.ForeColor = System.Drawing.Color.White;
-            this.bBishop1.Location = new System.Drawing.Point(175, 25);
+            this.bBishop1.Location = new System.Drawing.Point(167, 57);
             this.bBishop1.Name = "bBishop1";
-            this.bBishop1.Size = new System.Drawing.Size(54, 51);
+            this.bBishop1.Size = new System.Drawing.Size(54, 54);
             this.bBishop1.TabIndex = 2;
             this.bBishop1.Text = "bBishop1";
             this.bBishop1.UseVisualStyleBackColor = false;
@@ -101,9 +102,9 @@
             // 
             this.bQueen.BackColor = System.Drawing.Color.Black;
             this.bQueen.ForeColor = System.Drawing.Color.White;
-            this.bQueen.Location = new System.Drawing.Point(235, 25);
+            this.bQueen.Location = new System.Drawing.Point(222, 57);
             this.bQueen.Name = "bQueen";
-            this.bQueen.Size = new System.Drawing.Size(54, 51);
+            this.bQueen.Size = new System.Drawing.Size(54, 54);
             this.bQueen.TabIndex = 3;
             this.bQueen.Text = "bQueen";
             this.bQueen.UseVisualStyleBackColor = false;
@@ -112,9 +113,9 @@
             // 
             this.bKing.BackColor = System.Drawing.Color.Black;
             this.bKing.ForeColor = System.Drawing.Color.White;
-            this.bKing.Location = new System.Drawing.Point(295, 25);
+            this.bKing.Location = new System.Drawing.Point(277, 57);
             this.bKing.Name = "bKing";
-            this.bKing.Size = new System.Drawing.Size(54, 51);
+            this.bKing.Size = new System.Drawing.Size(54, 54);
             this.bKing.TabIndex = 4;
             this.bKing.Text = "bKing";
             this.bKing.UseVisualStyleBackColor = false;
@@ -123,9 +124,9 @@
             // 
             this.bBishop2.BackColor = System.Drawing.Color.Black;
             this.bBishop2.ForeColor = System.Drawing.Color.White;
-            this.bBishop2.Location = new System.Drawing.Point(355, 25);
+            this.bBishop2.Location = new System.Drawing.Point(332, 57);
             this.bBishop2.Name = "bBishop2";
-            this.bBishop2.Size = new System.Drawing.Size(54, 51);
+            this.bBishop2.Size = new System.Drawing.Size(54, 54);
             this.bBishop2.TabIndex = 5;
             this.bBishop2.Text = "bBishop2";
             this.bBishop2.UseVisualStyleBackColor = false;
@@ -134,9 +135,9 @@
             // 
             this.bKnight2.BackColor = System.Drawing.Color.Black;
             this.bKnight2.ForeColor = System.Drawing.Color.White;
-            this.bKnight2.Location = new System.Drawing.Point(415, 25);
+            this.bKnight2.Location = new System.Drawing.Point(387, 57);
             this.bKnight2.Name = "bKnight2";
-            this.bKnight2.Size = new System.Drawing.Size(54, 51);
+            this.bKnight2.Size = new System.Drawing.Size(54, 54);
             this.bKnight2.TabIndex = 6;
             this.bKnight2.Text = "bKnight2";
             this.bKnight2.UseVisualStyleBackColor = false;
@@ -145,153 +146,153 @@
             // 
             this.bRook2.BackColor = System.Drawing.Color.Black;
             this.bRook2.ForeColor = System.Drawing.Color.White;
-            this.bRook2.Location = new System.Drawing.Point(475, 25);
+            this.bRook2.Location = new System.Drawing.Point(442, 57);
             this.bRook2.Name = "bRook2";
-            this.bRook2.Size = new System.Drawing.Size(54, 51);
+            this.bRook2.Size = new System.Drawing.Size(54, 54);
             this.bRook2.TabIndex = 7;
             this.bRook2.Text = "bRook2";
             this.bRook2.UseVisualStyleBackColor = false;
             // 
             // wRook2
             // 
-            this.wRook2.Location = new System.Drawing.Point(475, 387);
+            this.wRook2.Location = new System.Drawing.Point(442, 442);
             this.wRook2.Name = "wRook2";
-            this.wRook2.Size = new System.Drawing.Size(54, 51);
+            this.wRook2.Size = new System.Drawing.Size(54, 54);
             this.wRook2.TabIndex = 15;
             this.wRook2.Text = "wRook2";
             this.wRook2.UseVisualStyleBackColor = true;
             // 
             // wKnight2
             // 
-            this.wKnight2.Location = new System.Drawing.Point(415, 387);
+            this.wKnight2.Location = new System.Drawing.Point(387, 442);
             this.wKnight2.Name = "wKnight2";
-            this.wKnight2.Size = new System.Drawing.Size(54, 51);
+            this.wKnight2.Size = new System.Drawing.Size(54, 54);
             this.wKnight2.TabIndex = 14;
             this.wKnight2.Text = "wKnight2";
             this.wKnight2.UseVisualStyleBackColor = true;
             // 
             // wBishop2
             // 
-            this.wBishop2.Location = new System.Drawing.Point(355, 387);
+            this.wBishop2.Location = new System.Drawing.Point(332, 442);
             this.wBishop2.Name = "wBishop2";
-            this.wBishop2.Size = new System.Drawing.Size(54, 51);
+            this.wBishop2.Size = new System.Drawing.Size(54, 54);
             this.wBishop2.TabIndex = 13;
             this.wBishop2.Text = "wBishop2";
             this.wBishop2.UseVisualStyleBackColor = true;
             // 
             // wKing
             // 
-            this.wKing.Location = new System.Drawing.Point(295, 387);
+            this.wKing.Location = new System.Drawing.Point(277, 442);
             this.wKing.Name = "wKing";
-            this.wKing.Size = new System.Drawing.Size(54, 51);
+            this.wKing.Size = new System.Drawing.Size(54, 54);
             this.wKing.TabIndex = 12;
             this.wKing.Text = "wKing";
             this.wKing.UseVisualStyleBackColor = true;
             // 
             // wQueen
             // 
-            this.wQueen.Location = new System.Drawing.Point(235, 387);
+            this.wQueen.Location = new System.Drawing.Point(222, 442);
             this.wQueen.Name = "wQueen";
-            this.wQueen.Size = new System.Drawing.Size(54, 51);
+            this.wQueen.Size = new System.Drawing.Size(54, 54);
             this.wQueen.TabIndex = 11;
             this.wQueen.Text = "wQueen";
             this.wQueen.UseVisualStyleBackColor = true;
             // 
             // wBishop1
             // 
-            this.wBishop1.Location = new System.Drawing.Point(175, 387);
+            this.wBishop1.Location = new System.Drawing.Point(167, 442);
             this.wBishop1.Name = "wBishop1";
-            this.wBishop1.Size = new System.Drawing.Size(54, 51);
+            this.wBishop1.Size = new System.Drawing.Size(54, 54);
             this.wBishop1.TabIndex = 10;
             this.wBishop1.Text = "wBishop1";
             this.wBishop1.UseVisualStyleBackColor = true;
             // 
             // wKnight1
             // 
-            this.wKnight1.Location = new System.Drawing.Point(115, 387);
+            this.wKnight1.Location = new System.Drawing.Point(112, 442);
             this.wKnight1.Name = "wKnight1";
-            this.wKnight1.Size = new System.Drawing.Size(54, 51);
+            this.wKnight1.Size = new System.Drawing.Size(54, 54);
             this.wKnight1.TabIndex = 9;
             this.wKnight1.Text = "wKnight1";
             this.wKnight1.UseVisualStyleBackColor = true;
             // 
             // wRook1
             // 
-            this.wRook1.Location = new System.Drawing.Point(55, 387);
+            this.wRook1.Location = new System.Drawing.Point(57, 442);
             this.wRook1.Name = "wRook1";
-            this.wRook1.Size = new System.Drawing.Size(54, 51);
+            this.wRook1.Size = new System.Drawing.Size(54, 54);
             this.wRook1.TabIndex = 8;
             this.wRook1.Text = "wRook1";
             this.wRook1.UseVisualStyleBackColor = true;
             // 
             // wPawn8
             // 
-            this.wPawn8.Location = new System.Drawing.Point(475, 330);
+            this.wPawn8.Location = new System.Drawing.Point(442, 387);
             this.wPawn8.Name = "wPawn8";
-            this.wPawn8.Size = new System.Drawing.Size(54, 51);
+            this.wPawn8.Size = new System.Drawing.Size(54, 54);
             this.wPawn8.TabIndex = 23;
             this.wPawn8.Text = "wPawn8";
             this.wPawn8.UseVisualStyleBackColor = true;
             // 
             // wPawn7
             // 
-            this.wPawn7.Location = new System.Drawing.Point(415, 330);
+            this.wPawn7.Location = new System.Drawing.Point(387, 387);
             this.wPawn7.Name = "wPawn7";
-            this.wPawn7.Size = new System.Drawing.Size(54, 51);
+            this.wPawn7.Size = new System.Drawing.Size(54, 54);
             this.wPawn7.TabIndex = 22;
             this.wPawn7.Text = "wPawn7";
             this.wPawn7.UseVisualStyleBackColor = true;
             // 
             // wPawn6
             // 
-            this.wPawn6.Location = new System.Drawing.Point(355, 330);
+            this.wPawn6.Location = new System.Drawing.Point(332, 387);
             this.wPawn6.Name = "wPawn6";
-            this.wPawn6.Size = new System.Drawing.Size(54, 51);
+            this.wPawn6.Size = new System.Drawing.Size(54, 54);
             this.wPawn6.TabIndex = 21;
             this.wPawn6.Text = "wPawn6";
             this.wPawn6.UseVisualStyleBackColor = true;
             // 
             // wPawn5
             // 
-            this.wPawn5.Location = new System.Drawing.Point(295, 330);
+            this.wPawn5.Location = new System.Drawing.Point(277, 387);
             this.wPawn5.Name = "wPawn5";
-            this.wPawn5.Size = new System.Drawing.Size(54, 51);
+            this.wPawn5.Size = new System.Drawing.Size(54, 54);
             this.wPawn5.TabIndex = 20;
             this.wPawn5.Text = "wPawn5";
             this.wPawn5.UseVisualStyleBackColor = true;
             // 
             // wPawn4
             // 
-            this.wPawn4.Location = new System.Drawing.Point(235, 330);
+            this.wPawn4.Location = new System.Drawing.Point(222, 387);
             this.wPawn4.Name = "wPawn4";
-            this.wPawn4.Size = new System.Drawing.Size(54, 51);
+            this.wPawn4.Size = new System.Drawing.Size(54, 54);
             this.wPawn4.TabIndex = 19;
             this.wPawn4.Text = "wPawn4";
             this.wPawn4.UseVisualStyleBackColor = true;
             // 
             // wPawn3
             // 
-            this.wPawn3.Location = new System.Drawing.Point(175, 330);
+            this.wPawn3.Location = new System.Drawing.Point(167, 387);
             this.wPawn3.Name = "wPawn3";
-            this.wPawn3.Size = new System.Drawing.Size(54, 51);
+            this.wPawn3.Size = new System.Drawing.Size(54, 54);
             this.wPawn3.TabIndex = 18;
             this.wPawn3.Text = "wPawn3";
             this.wPawn3.UseVisualStyleBackColor = true;
             // 
             // wPawn2
             // 
-            this.wPawn2.Location = new System.Drawing.Point(115, 330);
+            this.wPawn2.Location = new System.Drawing.Point(112, 387);
             this.wPawn2.Name = "wPawn2";
-            this.wPawn2.Size = new System.Drawing.Size(54, 51);
+            this.wPawn2.Size = new System.Drawing.Size(54, 54);
             this.wPawn2.TabIndex = 17;
             this.wPawn2.Text = "wPawn2";
             this.wPawn2.UseVisualStyleBackColor = true;
             // 
             // wPawn1
             // 
-            this.wPawn1.Location = new System.Drawing.Point(55, 330);
+            this.wPawn1.Location = new System.Drawing.Point(57, 387);
             this.wPawn1.Name = "wPawn1";
-            this.wPawn1.Size = new System.Drawing.Size(54, 51);
+            this.wPawn1.Size = new System.Drawing.Size(54, 54);
             this.wPawn1.TabIndex = 16;
             this.wPawn1.Text = "wPawn1";
             this.wPawn1.UseVisualStyleBackColor = true;
@@ -300,9 +301,9 @@
             // 
             this.bPawn8.BackColor = System.Drawing.Color.Black;
             this.bPawn8.ForeColor = System.Drawing.Color.White;
-            this.bPawn8.Location = new System.Drawing.Point(475, 82);
+            this.bPawn8.Location = new System.Drawing.Point(442, 112);
             this.bPawn8.Name = "bPawn8";
-            this.bPawn8.Size = new System.Drawing.Size(54, 51);
+            this.bPawn8.Size = new System.Drawing.Size(54, 54);
             this.bPawn8.TabIndex = 31;
             this.bPawn8.Text = "bPawn8";
             this.bPawn8.UseVisualStyleBackColor = false;
@@ -311,9 +312,9 @@
             // 
             this.bPawn7.BackColor = System.Drawing.Color.Black;
             this.bPawn7.ForeColor = System.Drawing.Color.White;
-            this.bPawn7.Location = new System.Drawing.Point(415, 82);
+            this.bPawn7.Location = new System.Drawing.Point(387, 112);
             this.bPawn7.Name = "bPawn7";
-            this.bPawn7.Size = new System.Drawing.Size(54, 51);
+            this.bPawn7.Size = new System.Drawing.Size(54, 54);
             this.bPawn7.TabIndex = 30;
             this.bPawn7.Text = "bPawn7";
             this.bPawn7.UseVisualStyleBackColor = false;
@@ -322,9 +323,9 @@
             // 
             this.bPawn6.BackColor = System.Drawing.Color.Black;
             this.bPawn6.ForeColor = System.Drawing.Color.White;
-            this.bPawn6.Location = new System.Drawing.Point(355, 82);
+            this.bPawn6.Location = new System.Drawing.Point(332, 112);
             this.bPawn6.Name = "bPawn6";
-            this.bPawn6.Size = new System.Drawing.Size(54, 51);
+            this.bPawn6.Size = new System.Drawing.Size(54, 54);
             this.bPawn6.TabIndex = 29;
             this.bPawn6.Text = "bPawn6";
             this.bPawn6.UseVisualStyleBackColor = false;
@@ -333,9 +334,9 @@
             // 
             this.bPawn5.BackColor = System.Drawing.Color.Black;
             this.bPawn5.ForeColor = System.Drawing.Color.White;
-            this.bPawn5.Location = new System.Drawing.Point(295, 82);
+            this.bPawn5.Location = new System.Drawing.Point(277, 112);
             this.bPawn5.Name = "bPawn5";
-            this.bPawn5.Size = new System.Drawing.Size(54, 51);
+            this.bPawn5.Size = new System.Drawing.Size(54, 54);
             this.bPawn5.TabIndex = 28;
             this.bPawn5.Text = "bPawn5";
             this.bPawn5.UseVisualStyleBackColor = false;
@@ -344,9 +345,9 @@
             // 
             this.bPawn4.BackColor = System.Drawing.Color.Black;
             this.bPawn4.ForeColor = System.Drawing.Color.White;
-            this.bPawn4.Location = new System.Drawing.Point(235, 82);
+            this.bPawn4.Location = new System.Drawing.Point(222, 112);
             this.bPawn4.Name = "bPawn4";
-            this.bPawn4.Size = new System.Drawing.Size(54, 51);
+            this.bPawn4.Size = new System.Drawing.Size(54, 54);
             this.bPawn4.TabIndex = 27;
             this.bPawn4.Text = "bPawn4";
             this.bPawn4.UseVisualStyleBackColor = false;
@@ -355,9 +356,9 @@
             // 
             this.bPawn3.BackColor = System.Drawing.Color.Black;
             this.bPawn3.ForeColor = System.Drawing.Color.White;
-            this.bPawn3.Location = new System.Drawing.Point(175, 82);
+            this.bPawn3.Location = new System.Drawing.Point(167, 112);
             this.bPawn3.Name = "bPawn3";
-            this.bPawn3.Size = new System.Drawing.Size(54, 51);
+            this.bPawn3.Size = new System.Drawing.Size(54, 54);
             this.bPawn3.TabIndex = 26;
             this.bPawn3.Text = "bPawn3";
             this.bPawn3.UseVisualStyleBackColor = false;
@@ -366,9 +367,9 @@
             // 
             this.bPawn2.BackColor = System.Drawing.Color.Black;
             this.bPawn2.ForeColor = System.Drawing.Color.White;
-            this.bPawn2.Location = new System.Drawing.Point(115, 82);
+            this.bPawn2.Location = new System.Drawing.Point(112, 112);
             this.bPawn2.Name = "bPawn2";
-            this.bPawn2.Size = new System.Drawing.Size(54, 51);
+            this.bPawn2.Size = new System.Drawing.Size(54, 54);
             this.bPawn2.TabIndex = 25;
             this.bPawn2.Text = "bPawn2";
             this.bPawn2.UseVisualStyleBackColor = false;
@@ -377,9 +378,9 @@
             // 
             this.bPawn1.BackColor = System.Drawing.Color.Black;
             this.bPawn1.ForeColor = System.Drawing.Color.White;
-            this.bPawn1.Location = new System.Drawing.Point(55, 82);
+            this.bPawn1.Location = new System.Drawing.Point(57, 112);
             this.bPawn1.Name = "bPawn1";
-            this.bPawn1.Size = new System.Drawing.Size(54, 51);
+            this.bPawn1.Size = new System.Drawing.Size(54, 54);
             this.bPawn1.TabIndex = 24;
             this.bPawn1.Text = "bPawn1";
             this.bPawn1.UseVisualStyleBackColor = false;
@@ -404,11 +405,22 @@
             this.wTime.TabIndex = 33;
             this.wTime.Text = "5:00";
             // 
+            // startButton
+            // 
+            this.startButton.Location = new System.Drawing.Point(553, 224);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(75, 23);
+            this.startButton.TabIndex = 34;
+            this.startButton.Text = "Start";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 450);
+            this.ClientSize = new System.Drawing.Size(650, 529);
+            this.Controls.Add(this.startButton);
             this.Controls.Add(this.wTime);
             this.Controls.Add(this.bTime);
             this.Controls.Add(this.bPawn8);
@@ -486,6 +498,7 @@
         private System.Windows.Forms.Button bPawn1;
         private System.Windows.Forms.Label bTime;
         private System.Windows.Forms.Label wTime;
+        private System.Windows.Forms.Button startButton;
     }
 }
 
