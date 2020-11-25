@@ -69,7 +69,7 @@
             // 
             this.bRook1.BackColor = System.Drawing.Color.Black;
             this.bRook1.ForeColor = System.Drawing.Color.White;
-            this.bRook1.Location = new System.Drawing.Point(57, 57);
+            this.bRook1.Location = new System.Drawing.Point(55, 55);
             this.bRook1.Name = "bRook1";
             this.bRook1.Size = new System.Drawing.Size(54, 54);
             this.bRook1.TabIndex = 0;
@@ -80,7 +80,7 @@
             // 
             this.bKnight1.BackColor = System.Drawing.Color.Black;
             this.bKnight1.ForeColor = System.Drawing.Color.White;
-            this.bKnight1.Location = new System.Drawing.Point(112, 57);
+            this.bKnight1.Location = new System.Drawing.Point(110, 55);
             this.bKnight1.Name = "bKnight1";
             this.bKnight1.Size = new System.Drawing.Size(54, 54);
             this.bKnight1.TabIndex = 1;
@@ -91,7 +91,7 @@
             // 
             this.bBishop1.BackColor = System.Drawing.Color.Black;
             this.bBishop1.ForeColor = System.Drawing.Color.White;
-            this.bBishop1.Location = new System.Drawing.Point(167, 57);
+            this.bBishop1.Location = new System.Drawing.Point(165, 55);
             this.bBishop1.Name = "bBishop1";
             this.bBishop1.Size = new System.Drawing.Size(54, 54);
             this.bBishop1.TabIndex = 2;
@@ -102,7 +102,7 @@
             // 
             this.bQueen.BackColor = System.Drawing.Color.Black;
             this.bQueen.ForeColor = System.Drawing.Color.White;
-            this.bQueen.Location = new System.Drawing.Point(222, 57);
+            this.bQueen.Location = new System.Drawing.Point(220, 55);
             this.bQueen.Name = "bQueen";
             this.bQueen.Size = new System.Drawing.Size(54, 54);
             this.bQueen.TabIndex = 3;
@@ -113,7 +113,7 @@
             // 
             this.bKing.BackColor = System.Drawing.Color.Black;
             this.bKing.ForeColor = System.Drawing.Color.White;
-            this.bKing.Location = new System.Drawing.Point(277, 57);
+            this.bKing.Location = new System.Drawing.Point(275, 55);
             this.bKing.Name = "bKing";
             this.bKing.Size = new System.Drawing.Size(54, 54);
             this.bKing.TabIndex = 4;
@@ -124,7 +124,7 @@
             // 
             this.bBishop2.BackColor = System.Drawing.Color.Black;
             this.bBishop2.ForeColor = System.Drawing.Color.White;
-            this.bBishop2.Location = new System.Drawing.Point(332, 57);
+            this.bBishop2.Location = new System.Drawing.Point(330, 55);
             this.bBishop2.Name = "bBishop2";
             this.bBishop2.Size = new System.Drawing.Size(54, 54);
             this.bBishop2.TabIndex = 5;
@@ -135,7 +135,7 @@
             // 
             this.bKnight2.BackColor = System.Drawing.Color.Black;
             this.bKnight2.ForeColor = System.Drawing.Color.White;
-            this.bKnight2.Location = new System.Drawing.Point(387, 57);
+            this.bKnight2.Location = new System.Drawing.Point(385, 55);
             this.bKnight2.Name = "bKnight2";
             this.bKnight2.Size = new System.Drawing.Size(54, 54);
             this.bKnight2.TabIndex = 6;
@@ -146,7 +146,7 @@
             // 
             this.bRook2.BackColor = System.Drawing.Color.Black;
             this.bRook2.ForeColor = System.Drawing.Color.White;
-            this.bRook2.Location = new System.Drawing.Point(442, 57);
+            this.bRook2.Location = new System.Drawing.Point(440, 55);
             this.bRook2.Name = "bRook2";
             this.bRook2.Size = new System.Drawing.Size(54, 54);
             this.bRook2.TabIndex = 7;
@@ -155,7 +155,7 @@
             // 
             // wRook2
             // 
-            this.wRook2.Location = new System.Drawing.Point(442, 442);
+            this.wRook2.Location = new System.Drawing.Point(440, 440);
             this.wRook2.Name = "wRook2";
             this.wRook2.Size = new System.Drawing.Size(54, 54);
             this.wRook2.TabIndex = 15;
@@ -164,7 +164,7 @@
             // 
             // wKnight2
             // 
-            this.wKnight2.Location = new System.Drawing.Point(387, 442);
+            this.wKnight2.Location = new System.Drawing.Point(385, 440);
             this.wKnight2.Name = "wKnight2";
             this.wKnight2.Size = new System.Drawing.Size(54, 54);
             this.wKnight2.TabIndex = 14;
@@ -173,7 +173,7 @@
             // 
             // wBishop2
             // 
-            this.wBishop2.Location = new System.Drawing.Point(332, 442);
+            this.wBishop2.Location = new System.Drawing.Point(330, 440);
             this.wBishop2.Name = "wBishop2";
             this.wBishop2.Size = new System.Drawing.Size(54, 54);
             this.wBishop2.TabIndex = 13;
@@ -182,7 +182,7 @@
             // 
             // wKing
             // 
-            this.wKing.Location = new System.Drawing.Point(277, 442);
+            this.wKing.Location = new System.Drawing.Point(275, 440);
             this.wKing.Name = "wKing";
             this.wKing.Size = new System.Drawing.Size(54, 54);
             this.wKing.TabIndex = 12;
@@ -191,7 +191,7 @@
             // 
             // wQueen
             // 
-            this.wQueen.Location = new System.Drawing.Point(222, 442);
+            this.wQueen.Location = new System.Drawing.Point(220, 440);
             this.wQueen.Name = "wQueen";
             this.wQueen.Size = new System.Drawing.Size(54, 54);
             this.wQueen.TabIndex = 11;
@@ -200,7 +200,7 @@
             // 
             // wBishop1
             // 
-            this.wBishop1.Location = new System.Drawing.Point(167, 442);
+            this.wBishop1.Location = new System.Drawing.Point(165, 440);
             this.wBishop1.Name = "wBishop1";
             this.wBishop1.Size = new System.Drawing.Size(54, 54);
             this.wBishop1.TabIndex = 10;
@@ -209,7 +209,7 @@
             // 
             // wKnight1
             // 
-            this.wKnight1.Location = new System.Drawing.Point(112, 442);
+            this.wKnight1.Location = new System.Drawing.Point(110, 440);
             this.wKnight1.Name = "wKnight1";
             this.wKnight1.Size = new System.Drawing.Size(54, 54);
             this.wKnight1.TabIndex = 9;
@@ -218,7 +218,7 @@
             // 
             // wRook1
             // 
-            this.wRook1.Location = new System.Drawing.Point(57, 442);
+            this.wRook1.Location = new System.Drawing.Point(55, 440);
             this.wRook1.Name = "wRook1";
             this.wRook1.Size = new System.Drawing.Size(54, 54);
             this.wRook1.TabIndex = 8;
@@ -227,7 +227,7 @@
             // 
             // wPawn8
             // 
-            this.wPawn8.Location = new System.Drawing.Point(442, 387);
+            this.wPawn8.Location = new System.Drawing.Point(440, 385);
             this.wPawn8.Name = "wPawn8";
             this.wPawn8.Size = new System.Drawing.Size(54, 54);
             this.wPawn8.TabIndex = 23;
@@ -236,7 +236,7 @@
             // 
             // wPawn7
             // 
-            this.wPawn7.Location = new System.Drawing.Point(387, 387);
+            this.wPawn7.Location = new System.Drawing.Point(385, 385);
             this.wPawn7.Name = "wPawn7";
             this.wPawn7.Size = new System.Drawing.Size(54, 54);
             this.wPawn7.TabIndex = 22;
@@ -245,7 +245,7 @@
             // 
             // wPawn6
             // 
-            this.wPawn6.Location = new System.Drawing.Point(332, 387);
+            this.wPawn6.Location = new System.Drawing.Point(330, 385);
             this.wPawn6.Name = "wPawn6";
             this.wPawn6.Size = new System.Drawing.Size(54, 54);
             this.wPawn6.TabIndex = 21;
@@ -254,7 +254,7 @@
             // 
             // wPawn5
             // 
-            this.wPawn5.Location = new System.Drawing.Point(277, 387);
+            this.wPawn5.Location = new System.Drawing.Point(275, 385);
             this.wPawn5.Name = "wPawn5";
             this.wPawn5.Size = new System.Drawing.Size(54, 54);
             this.wPawn5.TabIndex = 20;
@@ -263,7 +263,7 @@
             // 
             // wPawn4
             // 
-            this.wPawn4.Location = new System.Drawing.Point(222, 387);
+            this.wPawn4.Location = new System.Drawing.Point(220, 385);
             this.wPawn4.Name = "wPawn4";
             this.wPawn4.Size = new System.Drawing.Size(54, 54);
             this.wPawn4.TabIndex = 19;
@@ -272,7 +272,7 @@
             // 
             // wPawn3
             // 
-            this.wPawn3.Location = new System.Drawing.Point(167, 387);
+            this.wPawn3.Location = new System.Drawing.Point(165, 385);
             this.wPawn3.Name = "wPawn3";
             this.wPawn3.Size = new System.Drawing.Size(54, 54);
             this.wPawn3.TabIndex = 18;
@@ -281,7 +281,7 @@
             // 
             // wPawn2
             // 
-            this.wPawn2.Location = new System.Drawing.Point(112, 387);
+            this.wPawn2.Location = new System.Drawing.Point(110, 385);
             this.wPawn2.Name = "wPawn2";
             this.wPawn2.Size = new System.Drawing.Size(54, 54);
             this.wPawn2.TabIndex = 17;
@@ -290,7 +290,7 @@
             // 
             // wPawn1
             // 
-            this.wPawn1.Location = new System.Drawing.Point(57, 387);
+            this.wPawn1.Location = new System.Drawing.Point(55, 385);
             this.wPawn1.Name = "wPawn1";
             this.wPawn1.Size = new System.Drawing.Size(54, 54);
             this.wPawn1.TabIndex = 16;
@@ -301,7 +301,7 @@
             // 
             this.bPawn8.BackColor = System.Drawing.Color.Black;
             this.bPawn8.ForeColor = System.Drawing.Color.White;
-            this.bPawn8.Location = new System.Drawing.Point(442, 112);
+            this.bPawn8.Location = new System.Drawing.Point(440, 110);
             this.bPawn8.Name = "bPawn8";
             this.bPawn8.Size = new System.Drawing.Size(54, 54);
             this.bPawn8.TabIndex = 31;
@@ -312,7 +312,7 @@
             // 
             this.bPawn7.BackColor = System.Drawing.Color.Black;
             this.bPawn7.ForeColor = System.Drawing.Color.White;
-            this.bPawn7.Location = new System.Drawing.Point(387, 112);
+            this.bPawn7.Location = new System.Drawing.Point(385, 110);
             this.bPawn7.Name = "bPawn7";
             this.bPawn7.Size = new System.Drawing.Size(54, 54);
             this.bPawn7.TabIndex = 30;
@@ -323,7 +323,7 @@
             // 
             this.bPawn6.BackColor = System.Drawing.Color.Black;
             this.bPawn6.ForeColor = System.Drawing.Color.White;
-            this.bPawn6.Location = new System.Drawing.Point(332, 112);
+            this.bPawn6.Location = new System.Drawing.Point(330, 110);
             this.bPawn6.Name = "bPawn6";
             this.bPawn6.Size = new System.Drawing.Size(54, 54);
             this.bPawn6.TabIndex = 29;
@@ -334,7 +334,7 @@
             // 
             this.bPawn5.BackColor = System.Drawing.Color.Black;
             this.bPawn5.ForeColor = System.Drawing.Color.White;
-            this.bPawn5.Location = new System.Drawing.Point(277, 112);
+            this.bPawn5.Location = new System.Drawing.Point(275, 110);
             this.bPawn5.Name = "bPawn5";
             this.bPawn5.Size = new System.Drawing.Size(54, 54);
             this.bPawn5.TabIndex = 28;
@@ -345,7 +345,7 @@
             // 
             this.bPawn4.BackColor = System.Drawing.Color.Black;
             this.bPawn4.ForeColor = System.Drawing.Color.White;
-            this.bPawn4.Location = new System.Drawing.Point(222, 112);
+            this.bPawn4.Location = new System.Drawing.Point(220, 110);
             this.bPawn4.Name = "bPawn4";
             this.bPawn4.Size = new System.Drawing.Size(54, 54);
             this.bPawn4.TabIndex = 27;
@@ -356,7 +356,7 @@
             // 
             this.bPawn3.BackColor = System.Drawing.Color.Black;
             this.bPawn3.ForeColor = System.Drawing.Color.White;
-            this.bPawn3.Location = new System.Drawing.Point(167, 112);
+            this.bPawn3.Location = new System.Drawing.Point(165, 110);
             this.bPawn3.Name = "bPawn3";
             this.bPawn3.Size = new System.Drawing.Size(54, 54);
             this.bPawn3.TabIndex = 26;
@@ -367,7 +367,7 @@
             // 
             this.bPawn2.BackColor = System.Drawing.Color.Black;
             this.bPawn2.ForeColor = System.Drawing.Color.White;
-            this.bPawn2.Location = new System.Drawing.Point(112, 112);
+            this.bPawn2.Location = new System.Drawing.Point(110, 110);
             this.bPawn2.Name = "bPawn2";
             this.bPawn2.Size = new System.Drawing.Size(54, 54);
             this.bPawn2.TabIndex = 25;
@@ -378,7 +378,7 @@
             // 
             this.bPawn1.BackColor = System.Drawing.Color.Black;
             this.bPawn1.ForeColor = System.Drawing.Color.White;
-            this.bPawn1.Location = new System.Drawing.Point(57, 112);
+            this.bPawn1.Location = new System.Drawing.Point(55, 110);
             this.bPawn1.Name = "bPawn1";
             this.bPawn1.Size = new System.Drawing.Size(54, 54);
             this.bPawn1.TabIndex = 24;

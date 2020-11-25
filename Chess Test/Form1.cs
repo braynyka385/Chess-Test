@@ -19,7 +19,11 @@ namespace Chess_Test
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            int[,] gridLoc = new int[8, 8];
+            //scaleValue is the value multiplied from grid position to get pixel position
+            int scaleValue = 55;
+            //realPos is used whenever the pixel position of stuff is needed
+            int[] realPos = {(1 * scaleValue), (2 * scaleValue),(3 * scaleValue),(4 * scaleValue),(5 * scaleValue),(6 * scaleValue),(7 * scaleValue),(8 * scaleValue)};
+            //int[,] gridLoc = new int[8, 8];
             //Generating the grid for the chess board, because I don't wanna manually create 64 spaces
             for (int x = 1; x <=8; x++)
             {
@@ -27,9 +31,11 @@ namespace Chess_Test
                 {
                     Button testButton = new Button();
                     this.Controls.Add(testButton);
-                    testButton.Location = new Point((x * 55), (y * 55));
+                    testButton.Location = new Point((x * scaleValue), (y * scaleValue));
                     testButton.Size = new Size(54, 54);
                     testButton.BackColor = Color.Brown;
+                    testButton.FlatStyle = FlatStyle.Flat;
+                    testButton.FlatAppearance.BorderColor = Color.Red;
 
                 }
             }
