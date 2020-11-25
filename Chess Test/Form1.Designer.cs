@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bRook1 = new System.Windows.Forms.Button();
             this.bKnight1 = new System.Windows.Forms.Button();
             this.bBishop1 = new System.Windows.Forms.Button();
@@ -63,6 +64,7 @@
             this.bTime = new System.Windows.Forms.Label();
             this.wTime = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // bRook1
@@ -415,6 +417,11 @@
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 16;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,6 +506,7 @@
         private System.Windows.Forms.Label bTime;
         private System.Windows.Forms.Label wTime;
         private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
