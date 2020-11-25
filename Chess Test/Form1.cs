@@ -33,7 +33,21 @@ namespace Chess_Test
                     this.Controls.Add(testButton);
                     testButton.Location = new Point((x * scaleValue), (y * scaleValue));
                     testButton.Size = new Size(54, 54);
-                    testButton.BackColor = Color.Brown;
+
+                    //Generating diagonal colours
+                    if (x % 2 == 0 && y % 2 == 0)
+                    {
+                        testButton.BackColor = Color.Green;
+                    }
+                    else if (x % 2 != 0 && y % 2 != 0)
+                    {
+                        testButton.BackColor = Color.Green;
+                    }
+                    else
+                    {
+                        testButton.BackColor = Color.Brown;
+                    }
+                    
                     testButton.FlatStyle = FlatStyle.Flat;
                     testButton.FlatAppearance.BorderColor = Color.Red;
 
