@@ -63,18 +63,17 @@ namespace Chess_Test
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            
+
         }
+
+
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                mouseGridPosX = MousePosition.X / scaleValue;
-                mouseGridPosY = MousePosition.Y / scaleValue;
-                Console.WriteLine(mouseGridPosX + "\n" + mouseGridPosY + "\n");
-
-                mouseGridPosX = Math.Floor(mouseGridPosX);
-            }
+            mouseGridPosX = MousePosition.X / scaleValue;
+            mouseGridPosY = MousePosition.Y / scaleValue;
+            mouseGridPosX = Math.Floor(mouseGridPosX);
+            mouseGridPosY = Math.Floor(mouseGridPosY);
+            debugLabel.Text = (mouseGridPosX + "\n" + mouseGridPosY + "\n");
         }
     }
 }
