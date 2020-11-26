@@ -16,6 +16,11 @@ namespace Chess_Test
         double mouseGridPosX;
         double mouseGridPosY;
         int scaleValue = 55;
+
+        Button pressedButton;
+        Button pressedPiece;
+
+        bool whiteTurn = true;
         public Form1()
         {
             InitializeComponent();
@@ -38,6 +43,7 @@ namespace Chess_Test
                     this.Controls.Add(testButton);
                     testButton.Location = new Point((x * scaleValue), (y * scaleValue));
                     testButton.Size = new Size(54, 54);
+                    testButton.Click += new EventHandler(button_down);
 
                     //Generating diagonal colours
                     if (x % 2 == 0 && y % 2 == 0)
@@ -74,6 +80,60 @@ namespace Chess_Test
             mouseGridPosX = Math.Floor(mouseGridPosX);
             mouseGridPosY = Math.Floor(mouseGridPosY);
             debugLabel.Text = (mouseGridPosX + "\n" + mouseGridPosY + "\n");
+        }
+        private void button_down(object sender, EventArgs e)
+        {
+            pressedButton = (Button)sender;
+            debugLabel.Text = ("Button pressed at\n" + pressedButton.Location.X / scaleValue + "\n\n" + pressedButton.Location.Y / scaleValue);
+            if (whiteTurn == true && pressedPiece.BackColor != Color.Black)
+            {
+                if (pressedPiece.Name.Contains("Pawn"))
+                {
+                    pawn_movement();
+                }
+
+            }
+            else if (whiteTurn == false && pressedPiece.BackColor == Color.Black)
+            {
+                if (pressedPiece.Name.Contains("Pawn"))
+                {
+                    pawn_movement();
+                }
+            }
+                
+
+        }
+
+        private void button_down_on_piece(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+
+                pressedPiece = (Button)sender;
+
+        }
+
+        private void pawn_movement()
+        {
+            if (whiteTurn == true && pressedPiece.Location.Y / scaleValue == 7 && pressedButton.Location.X/scaleValue == pressedPiece.Location.X / scaleValue && pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue <= 2)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = false;
+            }
+            else if (whiteTurn == false && pressedPiece.Location.Y / scaleValue == 2 && pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedButton.Location.Y / scaleValue - pressedPiece.Location.Y / scaleValue   <= 2)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = true;
+            }
+            else if (whiteTurn == true && pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue <= 1)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = false;
+            }
+            else if (whiteTurn == false && pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedButton.Location.Y / scaleValue - pressedPiece.Location.Y / scaleValue <= 1)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = true;
+            }
         }
     }
 }

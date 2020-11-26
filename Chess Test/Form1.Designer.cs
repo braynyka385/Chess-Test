@@ -78,6 +78,7 @@
             this.bRook1.TabIndex = 0;
             this.bRook1.Text = "bRook1";
             this.bRook1.UseVisualStyleBackColor = false;
+            this.bRook1.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bKnight1
             // 
@@ -89,6 +90,7 @@
             this.bKnight1.TabIndex = 1;
             this.bKnight1.Text = "bKnight1";
             this.bKnight1.UseVisualStyleBackColor = false;
+            this.bKnight1.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bBishop1
             // 
@@ -100,6 +102,7 @@
             this.bBishop1.TabIndex = 2;
             this.bBishop1.Text = "bBishop1";
             this.bBishop1.UseVisualStyleBackColor = false;
+            this.bBishop1.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bQueen
             // 
@@ -111,6 +114,7 @@
             this.bQueen.TabIndex = 3;
             this.bQueen.Text = "bQueen";
             this.bQueen.UseVisualStyleBackColor = false;
+            this.bQueen.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bKing
             // 
@@ -122,6 +126,7 @@
             this.bKing.TabIndex = 4;
             this.bKing.Text = "bKing";
             this.bKing.UseVisualStyleBackColor = false;
+            this.bKing.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bBishop2
             // 
@@ -133,6 +138,7 @@
             this.bBishop2.TabIndex = 5;
             this.bBishop2.Text = "bBishop2";
             this.bBishop2.UseVisualStyleBackColor = false;
+            this.bBishop2.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bKnight2
             // 
@@ -144,6 +150,7 @@
             this.bKnight2.TabIndex = 6;
             this.bKnight2.Text = "bKnight2";
             this.bKnight2.UseVisualStyleBackColor = false;
+            this.bKnight2.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bRook2
             // 
@@ -155,6 +162,7 @@
             this.bRook2.TabIndex = 7;
             this.bRook2.Text = "bRook2";
             this.bRook2.UseVisualStyleBackColor = false;
+            this.bRook2.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wRook2
             // 
@@ -164,6 +172,7 @@
             this.wRook2.TabIndex = 15;
             this.wRook2.Text = "wRook2";
             this.wRook2.UseVisualStyleBackColor = true;
+            this.wRook2.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wKnight2
             // 
@@ -173,6 +182,7 @@
             this.wKnight2.TabIndex = 14;
             this.wKnight2.Text = "wKnight2";
             this.wKnight2.UseVisualStyleBackColor = true;
+            this.wKnight2.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wBishop2
             // 
@@ -182,6 +192,7 @@
             this.wBishop2.TabIndex = 13;
             this.wBishop2.Text = "wBishop2";
             this.wBishop2.UseVisualStyleBackColor = true;
+            this.wBishop2.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wKing
             // 
@@ -191,6 +202,7 @@
             this.wKing.TabIndex = 12;
             this.wKing.Text = "wKing";
             this.wKing.UseVisualStyleBackColor = true;
+            this.wKing.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wQueen
             // 
@@ -200,6 +212,7 @@
             this.wQueen.TabIndex = 11;
             this.wQueen.Text = "wQueen";
             this.wQueen.UseVisualStyleBackColor = true;
+            this.wQueen.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wBishop1
             // 
@@ -209,6 +222,7 @@
             this.wBishop1.TabIndex = 10;
             this.wBishop1.Text = "wBishop1";
             this.wBishop1.UseVisualStyleBackColor = true;
+            this.wBishop1.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wKnight1
             // 
@@ -218,6 +232,7 @@
             this.wKnight1.TabIndex = 9;
             this.wKnight1.Text = "wKnight1";
             this.wKnight1.UseVisualStyleBackColor = true;
+            this.wKnight1.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wRook1
             // 
@@ -227,6 +242,7 @@
             this.wRook1.TabIndex = 8;
             this.wRook1.Text = "wRook1";
             this.wRook1.UseVisualStyleBackColor = true;
+            this.wRook1.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wPawn8
             // 
@@ -236,6 +252,7 @@
             this.wPawn8.TabIndex = 23;
             this.wPawn8.Text = "wPawn8";
             this.wPawn8.UseVisualStyleBackColor = true;
+            this.wPawn8.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wPawn7
             // 
@@ -245,6 +262,7 @@
             this.wPawn7.TabIndex = 22;
             this.wPawn7.Text = "wPawn7";
             this.wPawn7.UseVisualStyleBackColor = true;
+            this.wPawn7.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wPawn6
             // 
@@ -254,6 +272,7 @@
             this.wPawn6.TabIndex = 21;
             this.wPawn6.Text = "wPawn6";
             this.wPawn6.UseVisualStyleBackColor = true;
+            this.wPawn6.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wPawn5
             // 
@@ -263,6 +282,7 @@
             this.wPawn5.TabIndex = 20;
             this.wPawn5.Text = "wPawn5";
             this.wPawn5.UseVisualStyleBackColor = true;
+            this.wPawn5.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wPawn4
             // 
@@ -272,6 +292,7 @@
             this.wPawn4.TabIndex = 19;
             this.wPawn4.Text = "wPawn4";
             this.wPawn4.UseVisualStyleBackColor = true;
+            this.wPawn4.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wPawn3
             // 
@@ -281,6 +302,7 @@
             this.wPawn3.TabIndex = 18;
             this.wPawn3.Text = "wPawn3";
             this.wPawn3.UseVisualStyleBackColor = true;
+            this.wPawn3.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wPawn2
             // 
@@ -290,6 +312,7 @@
             this.wPawn2.TabIndex = 17;
             this.wPawn2.Text = "wPawn2";
             this.wPawn2.UseVisualStyleBackColor = true;
+            this.wPawn2.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // wPawn1
             // 
@@ -299,6 +322,7 @@
             this.wPawn1.TabIndex = 16;
             this.wPawn1.Text = "wPawn1";
             this.wPawn1.UseVisualStyleBackColor = true;
+            this.wPawn1.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bPawn8
             // 
@@ -310,6 +334,7 @@
             this.bPawn8.TabIndex = 31;
             this.bPawn8.Text = "bPawn8";
             this.bPawn8.UseVisualStyleBackColor = false;
+            this.bPawn8.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bPawn7
             // 
@@ -321,6 +346,7 @@
             this.bPawn7.TabIndex = 30;
             this.bPawn7.Text = "bPawn7";
             this.bPawn7.UseVisualStyleBackColor = false;
+            this.bPawn7.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bPawn6
             // 
@@ -332,6 +358,7 @@
             this.bPawn6.TabIndex = 29;
             this.bPawn6.Text = "bPawn6";
             this.bPawn6.UseVisualStyleBackColor = false;
+            this.bPawn6.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bPawn5
             // 
@@ -343,6 +370,7 @@
             this.bPawn5.TabIndex = 28;
             this.bPawn5.Text = "bPawn5";
             this.bPawn5.UseVisualStyleBackColor = false;
+            this.bPawn5.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bPawn4
             // 
@@ -354,6 +382,7 @@
             this.bPawn4.TabIndex = 27;
             this.bPawn4.Text = "bPawn4";
             this.bPawn4.UseVisualStyleBackColor = false;
+            this.bPawn4.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bPawn3
             // 
@@ -365,6 +394,7 @@
             this.bPawn3.TabIndex = 26;
             this.bPawn3.Text = "bPawn3";
             this.bPawn3.UseVisualStyleBackColor = false;
+            this.bPawn3.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bPawn2
             // 
@@ -376,6 +406,7 @@
             this.bPawn2.TabIndex = 25;
             this.bPawn2.Text = "bPawn2";
             this.bPawn2.UseVisualStyleBackColor = false;
+            this.bPawn2.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bPawn1
             // 
@@ -387,6 +418,7 @@
             this.bPawn1.TabIndex = 24;
             this.bPawn1.Text = "bPawn1";
             this.bPawn1.UseVisualStyleBackColor = false;
+            this.bPawn1.Click += new System.EventHandler(this.button_down_on_piece);
             // 
             // bTime
             // 
@@ -475,7 +507,7 @@
             this.Controls.Add(this.bRook1);
             this.Name = "Form1";
             this.Text = "Form1";
-            //this.Click += new System.EventHandler(this.Form1_Click);
+            this.Click += new System.EventHandler(this.button_down_on_piece);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
