@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.bRook1 = new System.Windows.Forms.Button();
             this.bKnight1 = new System.Windows.Forms.Button();
             this.bBishop1 = new System.Windows.Forms.Button();
@@ -64,7 +63,7 @@
             this.bTime = new System.Windows.Forms.Label();
             this.wTime = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.debugLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bRook1
@@ -417,16 +416,22 @@
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
-            // timer1
+            // debugLabel
             // 
-            this.timer1.Interval = 16;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.debugLabel.AutoSize = true;
+            this.debugLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.debugLabel.Location = new System.Drawing.Point(534, 157);
+            this.debugLabel.Name = "debugLabel";
+            this.debugLabel.Size = new System.Drawing.Size(46, 18);
+            this.debugLabel.TabIndex = 35;
+            this.debugLabel.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 529);
+            this.Controls.Add(this.debugLabel);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.wTime);
             this.Controls.Add(this.bTime);
@@ -464,6 +469,7 @@
             this.Controls.Add(this.bRook1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -506,7 +512,7 @@
         private System.Windows.Forms.Label bTime;
         private System.Windows.Forms.Label wTime;
         private System.Windows.Forms.Button startButton;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label debugLabel;
     }
 }
 

@@ -24,7 +24,6 @@ namespace Chess_Test
         private void StartButton_Click(object sender, EventArgs e)
         {
 
-            timer1.Enabled = true;
             //scaleValue is the value multiplied from grid position to get pixel position
             //realPos is used whenever the pixel position of stuff is needed
             int[] realPos = {(1 * scaleValue), (2 * scaleValue),(3 * scaleValue),(4 * scaleValue),(5 * scaleValue),(6 * scaleValue),(7 * scaleValue),(8 * scaleValue)};
@@ -63,18 +62,21 @@ namespace Chess_Test
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            
+            //Form1_MouseDown();
         }
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                mouseGridPosX = MousePosition.X / scaleValue;
-                mouseGridPosY = MousePosition.Y / scaleValue;
-                Console.WriteLine(mouseGridPosX + "\n" + mouseGridPosY + "\n");
+                    debugLabel.Text = "1";
+        if (e.Button == MouseButtons.Left)
+        {
+            mouseGridPosX = MousePosition.X / scaleValue;
+            mouseGridPosY = MousePosition.Y / scaleValue;
 
-                mouseGridPosX = Math.Floor(mouseGridPosX);
-            }
+
+            mouseGridPosX = Math.Floor(mouseGridPosX);
+            mouseGridPosY = Math.Floor(mouseGridPosY);
+            debugLabel.Text = mouseGridPosX + "\n\n" + mouseGridPosY;
+        }
         }
     }
 }
