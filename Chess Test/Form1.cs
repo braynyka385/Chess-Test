@@ -99,6 +99,10 @@ namespace Chess_Test
                 {
                     rook_movement();
                 }
+                else if (pressedPiece.Name.Contains("Bishop"))
+                {
+                    bishop_movement();
+                }
 
             }
             else if (whiteTurn == false && pressedPiece.BackColor == Color.Black)
@@ -115,7 +119,11 @@ namespace Chess_Test
                 {
                     rook_movement();
                 }
-                    
+                else if (pressedPiece.Name.Contains("Bishop"))
+                {
+                    bishop_movement();
+                }
+
             }
                 
 
@@ -263,6 +271,14 @@ namespace Chess_Test
             {
                 pressedPiece.Location = pressedButton.Location;
                 whiteTurn = true;
+            }
+        }
+        private void bishop_movement()
+        {
+            if (whiteTurn == true && pressedPiece.Location.X / scaleValue % 2 == pressedButton.Location.Y / scaleValue % 2 && pressedPiece.Location.Y / scaleValue % 2 == pressedButton.Location.X / scaleValue % 2)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = false;
             }
         }
     }
