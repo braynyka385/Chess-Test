@@ -133,8 +133,12 @@ namespace Chess_Test
         private void button_down_on_piece(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
-            lastPressedPiece = pressedPiece;
+
                 pressedPiece = (Button)sender;
+            if (whiteTurn == true && pressedPiece.Name.Contains("White")||whiteTurn == false && pressedPiece.Name.Contains("false"))
+            {
+                lastPressedPiece = pressedPiece;
+            }
             
 
         }
