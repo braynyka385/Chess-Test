@@ -134,10 +134,21 @@ namespace Chess_Test
         {
             Button clickedButton = (Button)sender;
 
-                pressedPiece = (Button)sender;
-            if (whiteTurn == true && pressedPiece.Name.Contains("White")||whiteTurn == false && pressedPiece.Name.Contains("false"))
+            pressedPiece = (Button)sender;
+            if ((whiteTurn == true && pressedPiece.Name.Contains("White"))||(whiteTurn == false && pressedPiece.Name.Contains("false")))
             {
                 lastPressedPiece = pressedPiece;
+            }
+            else if ((whiteTurn == true && pressedPiece.Name.Contains("Black"))||( whiteTurn == false && pressedPiece.Name.Contains("White")))
+            {
+                if (pressedPiece.Name.Contains("Pawn"))
+                {
+                    pawn_movement();
+                }
+                else if (pressedPiece.Name.Contains("Knight"))
+                {
+                    knight_movement();
+                }
             }
             
 
@@ -210,6 +221,48 @@ namespace Chess_Test
                 else if (pressedPiece.Location.X / scaleValue == pressedButton.Location.X / scaleValue + 1 && pressedPiece.Location.Y / scaleValue == pressedButton.Location.Y / scaleValue + 2)
                 {
                     pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                }
+
+
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    whiteTurn = false;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    whiteTurn = false;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    whiteTurn = false;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    whiteTurn = false;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 2)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    whiteTurn = false;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 2)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    whiteTurn = false;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 2)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    whiteTurn = false;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 2)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
                     whiteTurn = false;
                 }
             }
