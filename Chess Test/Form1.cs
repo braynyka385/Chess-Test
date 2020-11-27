@@ -85,7 +85,7 @@ namespace Chess_Test
         private void button_down(object sender, EventArgs e)
         {
             pressedButton = (Button)sender;
-            debugLabel.Text = ("Button pressed at\n" + pressedButton.Location.X / scaleValue + "\n\n" + pressedButton.Location.Y / scaleValue);
+            
             if (whiteTurn == true && pressedPiece.BackColor != Color.Black)
             {
                 if (pressedPiece.Name.Contains("Pawn"))
@@ -135,17 +135,18 @@ namespace Chess_Test
             Button clickedButton = (Button)sender;
 
             pressedPiece = (Button)sender;
-            if ((whiteTurn == true && pressedPiece.Name.Contains("White"))||(whiteTurn == false && pressedPiece.Name.Contains("false")))
+            if ((whiteTurn == true && pressedPiece.BackColor != Color.Black)||(whiteTurn == false && pressedPiece.BackColor == Color.Black))
             {
                 lastPressedPiece = pressedPiece;
             }
-            else if ((whiteTurn == true && pressedPiece.Name.Contains("Black"))||( whiteTurn == false && pressedPiece.Name.Contains("White")))
+            else if ((whiteTurn == true && pressedPiece.BackColor == Color.Black)||( whiteTurn == false && pressedPiece.BackColor != Color.Black))
             {
-                if (pressedPiece.Name.Contains("Pawn"))
+                //debugLabel.Text = ("True PP: \n" + pressedPiece.Name + "\n" + " LPP: \n" + lastPressedPiece.Name);
+                if (lastPressedPiece.Name.Contains("Pawn"))
                 {
                     pawn_movement();
                 }
-                else if (pressedPiece.Name.Contains("Knight"))
+                else if (lastPressedPiece.Name.Contains("Knight"))
                 {
                     knight_movement();
                 }
@@ -228,41 +229,49 @@ namespace Chess_Test
                 else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 1)
                 {
                     lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = false;
                 }
                 else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 1)
                 {
                     lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = false;
                 }
                 else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 1)
                 {
                     lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = false;
                 }
                 else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 1)
                 {
                     lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = false;
                 }
                 else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 2)
                 {
                     lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = false;
                 }
                 else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 2)
                 {
                     lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = false;
                 }
                 else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 2)
                 {
                     lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = false;
                 }
                 else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 2)
                 {
                     lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = false;
                 }
             }
@@ -306,6 +315,57 @@ namespace Chess_Test
                 else if (pressedPiece.Location.X / scaleValue == pressedButton.Location.X / scaleValue + 1 && pressedPiece.Location.Y / scaleValue == pressedButton.Location.Y / scaleValue + 2)
                 {
                     pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = true;
+                }
+
+
+
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 2 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 2)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 2)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue - 2)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+                else if (lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 1 && lastPressedPiece.Location.Y / scaleValue == pressedPiece.Location.Y / scaleValue + 2)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
                     whiteTurn = true;
                 }
             }
