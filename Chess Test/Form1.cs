@@ -74,14 +74,7 @@ namespace Chess_Test
         }
 
 
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            mouseGridPosX = MousePosition.X / scaleValue;
-            mouseGridPosY = MousePosition.Y / scaleValue;
-            mouseGridPosX = Math.Floor(mouseGridPosX);
-            mouseGridPosY = Math.Floor(mouseGridPosY);
-            debugLabel.Text = (mouseGridPosX + "\n" + mouseGridPosY + "\n");
-        }
+
         private void button_down(object sender, EventArgs e)
         {
             pressedButton = (Button)sender;
@@ -157,26 +150,67 @@ namespace Chess_Test
 
         private void pawn_movement()
         {
-            if (whiteTurn == true && pressedPiece.Location.Y / scaleValue == 7 && pressedButton.Location.X/scaleValue == pressedPiece.Location.X / scaleValue && pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue <= 2 && pressedButton.Location.Y / scaleValue < pressedPiece.Location.Y / scaleValue)
+            if(whiteTurn == true)
             {
-                pressedPiece.Location = pressedButton.Location;
-                whiteTurn = false;
+                    if (pressedPiece.Location.Y / scaleValue == 7 && pressedButton.Location.X/scaleValue == pressedPiece.Location.X / scaleValue && pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue <= 2 && pressedButton.Location.Y / scaleValue < pressedPiece.Location.Y / scaleValue)
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                }
+                    else if (pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue <= 1 && pressedButton.Location.Y / scaleValue < pressedPiece.Location.Y / scaleValue)
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                }
+
+
+                    else if(lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 1 && pressedPiece.Location.Y / scaleValue == lastPressedPiece.Location.Y / scaleValue - 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = false;
+                }
+                else if(lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 1 && pressedPiece.Location.Y / scaleValue == lastPressedPiece.Location.Y / scaleValue - 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = false;
+                }
+
+
             }
-            else if (whiteTurn == false && pressedPiece.Location.Y / scaleValue == 2 && pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedButton.Location.Y / scaleValue - pressedPiece.Location.Y / scaleValue   <= 2 && pressedButton.Location.Y / scaleValue > pressedPiece.Location.Y / scaleValue)
+
+            else if(whiteTurn == false)
+            {
+                if (pressedPiece.Location.Y / scaleValue == 2 && pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedButton.Location.Y / scaleValue - pressedPiece.Location.Y / scaleValue   <= 2 && pressedButton.Location.Y / scaleValue > pressedPiece.Location.Y / scaleValue)
             {
                 pressedPiece.Location = pressedButton.Location;
                 whiteTurn = true;
             }
-            else if (whiteTurn == true && pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue <= 1 && pressedButton.Location.Y / scaleValue < pressedPiece.Location.Y / scaleValue)
-            {
-                pressedPiece.Location = pressedButton.Location;
-                whiteTurn = false;
+            
+                else if (pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedButton.Location.Y / scaleValue - pressedPiece.Location.Y / scaleValue <= 1 && pressedButton.Location.Y / scaleValue > pressedPiece.Location.Y / scaleValue)
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = true;
+                }
+
+
+                else if(lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue - 1 && pressedPiece.Location.Y / scaleValue == lastPressedPiece.Location.Y / scaleValue + 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+                else if(lastPressedPiece.Location.X / scaleValue == pressedPiece.Location.X / scaleValue + 1 && pressedPiece.Location.Y / scaleValue == lastPressedPiece.Location.Y / scaleValue + 1)
+                {
+                    lastPressedPiece.Location = pressedPiece.Location;
+                    pressedPiece.Visible = false;
+                    whiteTurn = true;
+                }
+
             }
-            else if (whiteTurn == false && pressedButton.Location.X / scaleValue == pressedPiece.Location.X / scaleValue && pressedButton.Location.Y / scaleValue - pressedPiece.Location.Y / scaleValue <= 1 && pressedButton.Location.Y / scaleValue > pressedPiece.Location.Y / scaleValue)
-            {
-                pressedPiece.Location = pressedButton.Location;
-                whiteTurn = true;
-            }
+            
+            
 
 
         }
@@ -373,26 +407,36 @@ namespace Chess_Test
 
         private void rook_movement()
         {
-            if (whiteTurn == true && pressedPiece.Location.X / scaleValue == pressedButton.Location.X / scaleValue)
+            if(whiteTurn == true)
+            {
+                if (pressedPiece.Location.X / scaleValue == pressedButton.Location.X / scaleValue)
             {
                 pressedPiece.Location = pressedButton.Location;
                 whiteTurn = false;
             }
-            else if (whiteTurn == true && pressedPiece.Location.Y / scaleValue == pressedButton.Location.Y / scaleValue)
+            else if (pressedPiece.Location.Y / scaleValue == pressedButton.Location.Y / scaleValue)
             {
                 pressedPiece.Location = pressedButton.Location;
                 whiteTurn = false;
             }
-            else if (whiteTurn == false && pressedPiece.Location.Y / scaleValue == pressedButton.Location.Y / scaleValue)
+
+            }
+            else if (whiteTurn == false)
+            {
+            if (pressedPiece.Location.Y / scaleValue == pressedButton.Location.Y / scaleValue)
             {
                 pressedPiece.Location = pressedButton.Location;
                 whiteTurn = true;
             }
-            else if (whiteTurn == false && pressedPiece.Location.X / scaleValue == pressedButton.Location.X / scaleValue)
+            else if (pressedPiece.Location.X / scaleValue == pressedButton.Location.X / scaleValue)
             {
                 pressedPiece.Location = pressedButton.Location;
                 whiteTurn = true;
             }
+
+            }
+            
+            
         }
         private void bishop_movement()
         {

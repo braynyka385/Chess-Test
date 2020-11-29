@@ -507,8 +507,6 @@
             this.Controls.Add(this.bRook1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Click += new System.EventHandler(this.button_down_on_piece);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
