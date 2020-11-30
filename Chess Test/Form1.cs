@@ -97,6 +97,14 @@ namespace Chess_Test
                 {
                     bishop_movement();
                 }
+                else if (pressedPiece.Name.Contains("Queen")) 
+                {
+                    queen_movement();
+                }
+                else if (pressedPiece.Name.Contains("King"))
+                {
+                    king_movement();
+                }
 
             }
             else if (whiteTurn == false && pressedPiece.BackColor == Color.Black)
@@ -116,6 +124,14 @@ namespace Chess_Test
                 else if (pressedPiece.Name.Contains("Bishop"))
                 {
                     bishop_movement();
+                }
+                else if (pressedPiece.Name.Contains("Queen")) 
+                {
+                    queen_movement();
+                }
+                else if (pressedPiece.Name.Contains("King"))
+                {
+                    king_movement();
                 }
 
             }
@@ -535,6 +551,146 @@ namespace Chess_Test
             }
 
             
+        }
+
+        private void queen_movement()
+        {
+            int theoryPosX = pressedPiece.Location.X / scaleValue;
+            int theoryPosY = pressedPiece.Location.Y / scaleValue;
+            int theoryPosChangeX = 0;
+            int theoryPosChangeY = 0;
+
+
+            if (whiteTurn == true)
+            {
+                if (pressedPiece.Location.X / scaleValue == pressedButton.Location.X / scaleValue)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = false;
+            }
+            else if (pressedPiece.Location.Y / scaleValue == pressedButton.Location.Y / scaleValue)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = false;
+            }
+                if (theoryPosX != theoryPosY)
+                {
+                    if (theoryPosX < theoryPosY)
+                    {
+                        while (theoryPosX < theoryPosY)
+                        {
+                            theoryPosX++;
+                            theoryPosChangeX++;
+                        }
+                    }
+                    else if (theoryPosX > theoryPosY)
+                    {
+                        while (theoryPosX > theoryPosY)
+                        {
+                            theoryPosY++;
+                            theoryPosChangeY++;
+                        }
+                    }
+                }
+
+                if (((pressedPiece.Location.X / scaleValue) + theoryPosChangeX) - ((pressedButton.Location.X / scaleValue) + theoryPosChangeX) == ((pressedPiece.Location.Y / scaleValue) + theoryPosChangeY) - ((pressedButton.Location.Y / scaleValue) + theoryPosChangeY))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                }
+                else if (((pressedButton.Location.X / scaleValue) + theoryPosChangeX) - ((pressedPiece.Location.X / scaleValue) + theoryPosChangeX) == ((pressedButton.Location.Y / scaleValue) + theoryPosChangeY) - ((pressedPiece.Location.Y / scaleValue) + theoryPosChangeY))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                }
+                else if (((pressedButton.Location.X / scaleValue) + theoryPosChangeX) - ((pressedPiece.Location.X / scaleValue) + theoryPosChangeX) == -1 * (((pressedButton.Location.Y / scaleValue) + theoryPosChangeY) - ((pressedPiece.Location.Y / scaleValue) + theoryPosChangeY)))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                }
+                else if (-1 * (((pressedButton.Location.X / scaleValue) + theoryPosChangeX) - ((pressedPiece.Location.X / scaleValue) + theoryPosChangeX)) == ((pressedButton.Location.Y / scaleValue) + theoryPosChangeY) - ((pressedPiece.Location.Y / scaleValue) + theoryPosChangeY))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                }
+
+            }
+            else if (whiteTurn == false)
+            {
+                if (pressedPiece.Location.Y / scaleValue == pressedButton.Location.Y / scaleValue)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = true;
+            }
+            else if (pressedPiece.Location.X / scaleValue == pressedButton.Location.X / scaleValue)
+            {
+                pressedPiece.Location = pressedButton.Location;
+                whiteTurn = true;
+            }
+                if (theoryPosX != theoryPosY)
+                {
+                    if (theoryPosX < theoryPosY)
+                    {
+                        while (theoryPosX < theoryPosY)
+                        {
+                            theoryPosX++;
+                            theoryPosChangeX++;
+                        }
+                    }
+                    else if (theoryPosX > theoryPosY)
+                    {
+                        while (theoryPosX > theoryPosY)
+                        {
+                            theoryPosY++;
+                            theoryPosChangeY++;
+                        }
+                    }
+                }
+
+                if (((pressedPiece.Location.X / scaleValue) + theoryPosChangeX) - ((pressedButton.Location.X / scaleValue) + theoryPosChangeX) == ((pressedPiece.Location.Y / scaleValue) + theoryPosChangeY) - ((pressedButton.Location.Y / scaleValue) + theoryPosChangeY))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = true;
+                }
+                else if (((pressedButton.Location.X / scaleValue) + theoryPosChangeX) - ((pressedPiece.Location.X / scaleValue) + theoryPosChangeX) == ((pressedButton.Location.Y / scaleValue) + theoryPosChangeY) - ((pressedPiece.Location.Y / scaleValue) + theoryPosChangeY))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = true;
+                }
+                else if (((pressedButton.Location.X / scaleValue) + theoryPosChangeX) - ((pressedPiece.Location.X / scaleValue) + theoryPosChangeX) == -1 * (((pressedButton.Location.Y / scaleValue) + theoryPosChangeY) - ((pressedPiece.Location.Y / scaleValue) + theoryPosChangeY)))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = true;
+                }
+                else if (-1 * (((pressedButton.Location.X / scaleValue) + theoryPosChangeX) - ((pressedPiece.Location.X / scaleValue) + theoryPosChangeX)) == ((pressedButton.Location.Y / scaleValue) + theoryPosChangeY) - ((pressedPiece.Location.Y / scaleValue) + theoryPosChangeY))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = true;
+                }
+            }
+        }
+        private void king_movement()
+        {
+            bool whiteKingMoved = false;
+            bool blackKingMoved = false;
+            if(whiteTurn == true)
+            {
+                if((Math.Abs(pressedPiece.Location.X / scaleValue - pressedButton.Location.X / scaleValue) == 1 && Math.Abs(pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue) <= 1) || (Math.Abs(pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue) == 1 && Math.Abs(pressedPiece.Location.X / scaleValue - pressedButton.Location.X / scaleValue) <= 1))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                    whiteKingMoved = true;
+                }
+            }
+            else if(whiteTurn == false)
+            {
+                if((Math.Abs(pressedPiece.Location.X / scaleValue - pressedButton.Location.X / scaleValue) == 1 && Math.Abs(pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue) <= 1) || (Math.Abs(pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue) == 1 && Math.Abs(pressedPiece.Location.X / scaleValue - pressedButton.Location.X / scaleValue) <= 1))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = true;
+                    blackKingMoved = true;
+                }
+            }
         }
     }
 }
