@@ -22,6 +22,8 @@ namespace Chess_Test
         Button lastPressedPiece;
 
         bool whiteTurn = true;
+        bool whiteKingMoved = false;
+        bool blackKingMoved = false;
         public Form1()
         {
             InitializeComponent();
@@ -148,6 +150,7 @@ namespace Chess_Test
             {
                 lastPressedPiece = pressedPiece;
             }
+
             else if ((whiteTurn == true && pressedPiece.BackColor == Color.Black)||( whiteTurn == false && pressedPiece.BackColor != Color.Black))
             {
                 //debugLabel.Text = ("True PP: \n" + pressedPiece.Name + "\n" + " LPP: \n" + lastPressedPiece.Name);
@@ -671,8 +674,7 @@ namespace Chess_Test
         }
         private void king_movement()
         {
-            bool whiteKingMoved = false;
-            bool blackKingMoved = false;
+
             if(whiteTurn == true)
             {
                 if((Math.Abs(pressedPiece.Location.X / scaleValue - pressedButton.Location.X / scaleValue) == 1 && Math.Abs(pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue) <= 1) || (Math.Abs(pressedPiece.Location.Y / scaleValue - pressedButton.Location.Y / scaleValue) == 1 && Math.Abs(pressedPiece.Location.X / scaleValue - pressedButton.Location.X / scaleValue) <= 1))
@@ -680,6 +682,13 @@ namespace Chess_Test
                     pressedPiece.Location = pressedButton.Location;
                     whiteTurn = false;
                     whiteKingMoved = true;
+                }
+                else if(whiteKingMoved == false && Math.Abs(pressedPiece.Location.X / scaleValue - pressedButton.Location.X / scaleValue) == 2 && wBishop2.Location != new Point(wKing.Location.X + 1 * scaleValue, wKing.Location.Y))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = false;
+                    whiteKingMoved = true;
+                    wRook2.Location = new Point(pressedPiece.Location.X - 1 * scaleValue, pressedPiece.Location.Y);
                 }
             }
             else if(whiteTurn == false)
@@ -689,6 +698,13 @@ namespace Chess_Test
                     pressedPiece.Location = pressedButton.Location;
                     whiteTurn = true;
                     blackKingMoved = true;
+                }
+                else if (blackKingMoved == false && Math.Abs(pressedPiece.Location.X / scaleValue - pressedButton.Location.X / scaleValue) == 2 && bBishop2.Location != new Point(bKing.Location.X + 1 * scaleValue, bKing.Location.Y))
+                {
+                    pressedPiece.Location = pressedButton.Location;
+                    whiteTurn = true;
+                    blackKingMoved = true;
+                    bRook2.Location = new Point(pressedPiece.Location.X - 1 * scaleValue, pressedPiece.Location.Y);
                 }
             }
         }
